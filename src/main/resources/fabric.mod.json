@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "bbmod",
+  "version": "${version}",
+  "name": "bedrockbreak",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/qirieshka/bedrockbreak"
+  },
+  "license": "BSD-3-Clause",
+  "icon": "assets/bbmod/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "qir.clwn.bedrockbreak.bbmod.Bedrockbreak"
+    ]
+  },
+  "mixins": [
+    "bbmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
